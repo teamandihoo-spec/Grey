@@ -1,42 +1,27 @@
-/* Fond sombre et texte clair */
 .stApp {
-    background-color: #0f0f0f;
-    color: #cfcfcf;
+    background-color: #0a0a0a;
+    color: #ffffff;
 }
 
-/* Titre stylisé */
-.main-title {
-    font-size: 80px;
+.hero-title {
+    font-size: clamp(40px, 8vw, 100px);
     font-weight: 900;
-    color: #e63946;
-    text-transform: uppercase;
     text-align: center;
-    margin-top: -50px;
-    letter-spacing: 5px;
-    text-shadow: 3px 3px 0px #ffffff;
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: -2px;
 }
 
-.subtitle {
+.hero-subtitle {
     text-align: center;
     font-size: 1.2rem;
     color: #888;
-    text-transform: uppercase;
     margin-bottom: 40px;
 }
 
-/* Cartes de contenu */
-.card {
+.dark-card {
     background-color: #1a1a1a;
-    padding: 25px;
-    border: 1px solid #333;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-}
-
-/* Style des citations */
-span[data-cite] {
-    font-size: 0.8em;
-    color: #e63946;
-    vertical-align: super;
+    padding: 20px;
+    border-left: 5px solid #ff0000;
+    border-radius: 5px;
 }
