@@ -63,7 +63,7 @@ if st.session_state.auth:
 # Section Hero
 st.markdown(f"""
     <div class='hero'>
-        <h1 class='main-title'>{st.session_state.content['title']}</h1>
+        <img src="assets/logo.png" class="logo" alt="GREY logo">
         <p class='subtitle'>{st.session_state.content['style']} | Antananarivo, Madagascar [cite: 3]</p>
     </div>
 """, unsafe_allow_html=True)
