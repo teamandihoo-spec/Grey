@@ -1,0 +1,53 @@
+/* Style global */
+.stApp {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+/* Titres */
+.main-title {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff4b4b; /* Rouge agressif Nu Metal */
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 50px;
+}
+
+/* Cartes d'information */
+.info-card {
+    background-color: #262626;
+    padding: 20px;
+    border-left: 5px solid #ff4b4b;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.stButton>button {
+    background-color: #ff4b4b;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    font-weight: bold;
+}
+
+.stButton>button:hover {
+    background-color: #cc0000;
+    color: white;
+}
+
+/* Input boxes */
+.stTextInput>div>div>input, .stTextArea>div>div>textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
