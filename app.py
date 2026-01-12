@@ -5,6 +5,7 @@ import streamlit as st
 # =========================
 st.set_page_config(
     page_title="GREY - Nu Metal Madagascar",
+    page_icon="logo.ico",   # ← logo.ico à la racine
     layout="wide"
 )
 
@@ -111,17 +112,19 @@ if st.session_state.auth:
 # =========================
 
 # --- HERO SECTION ---
+st.markdown("<div class='hero'>", unsafe_allow_html=True)
+
+st.image(
+    "logo.ico",          # ← chemin corrigé
+    width=320
+)
+
 st.markdown(
-    """
-    <div class="hero">
-        <img src="assets/logo.png" class="logo" alt="GREY logo">
-        <p class="subtitle">
-            Nu Metal / Fusion / Rap Metal / Hardcore | Antananarivo, Madagascar [cite: 3]
-        </p>
-    </div>
-    """,
+    f"<p class='subtitle'>{st.session_state.content['style']} | Antananarivo, Madagascar [cite: 3]</p>",
     unsafe_allow_html=True
 )
+
+st.markdown("</div>", unsafe_allow_html=True)
 
 # =========================
 # CONTENU PRINCIPAL
