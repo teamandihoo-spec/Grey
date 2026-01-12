@@ -1,53 +1,42 @@
-/* Style global */
+/* Fond sombre et texte clair */
 .stApp {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    background-color: #0f0f0f;
+    color: #cfcfcf;
 }
 
-/* Titres */
+/* Titre stylisé */
 .main-title {
-    font-size: 5rem;
-    font-weight: 800;
+    font-size: 80px;
+    font-weight: 900;
+    color: #e63946;
     text-transform: uppercase;
-    color: #ff4b4b; /* Rouge agressif Nu Metal */
     text-align: center;
-    margin-bottom: 0px;
-    letter-spacing: -2px;
+    margin-top: -50px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0px #ffffff;
 }
 
 .subtitle {
     text-align: center;
     font-size: 1.2rem;
     color: #888;
-    margin-bottom: 50px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
-/* Cartes d'information */
-.info-card {
-    background-color: #262626;
-    padding: 20px;
-    border-left: 5px solid #ff4b4b;
-    border-radius: 5px;
+/* Cartes de contenu */
+.card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border: 1px solid #333;
+    border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
 }
 
-/* Boutons */
-.stButton>button {
-    background-color: #ff4b4b;
-    color: white;
-    border-radius: 0px;
-    border: none;
-    font-weight: bold;
-}
-
-.stButton>button:hover {
-    background-color: #cc0000;
-    color: white;
-}
-
-/* Input boxes */
-.stTextInput>div>div>input, .stTextArea>div>div>textarea {
-    background-color: #333;
-    color: white;
-    border: 1px solid #444;
+/* Style des citations */
+span[data-cite] {
+    font-size: 0.8em;
+    color: #e63946;
+    vertical-align: super;
 }
