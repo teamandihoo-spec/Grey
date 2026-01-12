@@ -1,27 +1,78 @@
-.stApp {
-    background-color: #0a0a0a;
-    color: #ffffff;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;900&display=swap');
+
+html, body, [data-testid="stAppViewContainer"] {
+    background-color: #080808;
+    color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
 }
 
-.hero-title {
-    font-size: clamp(40px, 8vw, 100px);
-    font-weight: 900;
-    text-align: center;
-    color: #ff0000;
-    text-transform: uppercase;
-    letter-spacing: -2px;
+.block-container {
+    padding-top: 2rem !important;
 }
 
-.hero-subtitle {
+/* Hero Section */
+.hero {
     text-align: center;
-    font-size: 1.2rem;
-    color: #888;
+    padding: 80px 0;
     margin-bottom: 40px;
 }
 
-.dark-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    border-left: 5px solid #ff0000;
-    border-radius: 5px;
+.main-title {
+    font-family: 'Syncopate', sans-serif;
+    font-size: clamp(40px, 10vw, 120px) !important;
+    font-weight: 700 !important;
+    color: #FF4B4B !important;
+    letter-spacing: -6px !important;
+    text-transform: uppercase;
+    margin: 0 !important;
+    line-height: 0.8 !important;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+/* Cards */
+.card {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 2px;
+    border-right: 4px solid #FF4B4B;
+    margin-top: 30px;
+}
+
+.card h4 {
+    color: #FF4B4B;
+    margin-bottom: 20px;
+}
+
+/* Placeholder Image */
+.placeholder {
+    height: 450px;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: 900;
+    border: 1px solid #222;
+}
+
+/* Admin Buttons */
+.stButton>button {
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #333;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.stButton>button:hover {
+    color: #FF4B4B;
+    border-color: #FF4B4B;
 }
