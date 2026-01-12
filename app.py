@@ -144,7 +144,7 @@ with col_left:
         )
 
 with col_right:
-    st.markdown("### ⚡ BIOGRAPHIE")
+    st.markdown("### BIOGRAPHIE")
     st.markdown(st.session_state.content["bio"])
 
     st.markdown("<div class='card'>", unsafe_allow_html=True)
